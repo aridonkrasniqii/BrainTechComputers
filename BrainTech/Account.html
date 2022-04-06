@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://use.fontawesome.com/your-embed-code.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type = "x-icon" href="images/BrainTechLogo.jpg">
+    <script src="https://kit.fontawesome.com/68ce2e65bb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Products</title>
+    <script>
+      function Login(){
+          var email=document.getElementById("Email").value;
+          var pwd=document.getElementById("Password").value;
+          var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;//regular expression
+      
+      
+      if(email==" ")
+      {
+          alert("Please enter an email");
+      }
+      else if(!filter.test(email)){
+          alert("Enter valid email id");
+      }  
+      else if(pwd==""){
+          alert("Please enter a password");
+      }
+           
+      else if(pwd.length < 8){
+          alert("Password is to short");
+      }
+  
+      
+      }
+      function SignUp(){
+          var email=document.getElementById("Email1").value;
+          var pwd=document.getElementById("Password1").value;
+          var pwd1=document.getElementById("Password2").value;
+          var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      
+      
+      if(email==" ")
+      {
+          alert("Please enter an email");
+      }
+      else if(!filter.test(email)){
+          alert("Enter valid email id");
+      }
+      else if(pwd==""){
+          alert("Please enter a password");
+      }
+      else if(pwd1==""){
+          alert("Please enter a password")
+      }
+      
+      else if(pwd.length < 8){
+          alert("Password is to short");
+      }
+      else if(pwd1!=pwd){
+          alert("Password don't match");
+      }
+  
+  }
+  </script>
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+    <div class = "navigation-bar">
+        <div class="logo">
+            <a href = "tech.html">
+                <img src = "images/BrainTechLogo.jpg" 
+                width = "125px"></a>
+
+        </div>
+        <nav>
+            <ul id = "MenuItems">
+                
+                <li> <a href="tech.html">Home</a></li>
+                <li> <a href="#">Products</a>
+                    <ul>
+                        <li><a href="products.html">Laptops</a></li>
+                        <li><a href="pc.html">PC</a></li>
+                        
+                    </ul>
+                    </li>
+                
+                <li> <a href="Support.html">Support</a></li>
+                <li> <a href="Account.html">Account</a></li>
+                <li><div class = "search-box">
+                    <input type="text" placeholder="Search..." class = "search-txt">
+                    <a href="#" class = "search-btn">
+                        <i class="fas fa-search"></i></a>
+                    </div> 
+                </li>    
+                
+            </ul>
+            
+        </nav>
+       
+        <img src="images/menuIcon.jpg" class = "menu-icon" alt="menu BrainTech">
+
+    </div>
+      
+    </div>
+</div>  
+   
+  
+ 
+
+    <div class="wrapper">
+        <div class = "wrapper-1">
+        <div class="title-text">
+           <div class="title login">
+              Login Form
+           </div>
+           <div class="title signup">
+              SignUp Form
+           </div>
+        </div>
+        <div class="form-container" id="form">
+           <div class="slide-controls">
+              <input type="radio" name="slide" id="login" checked>
+              <input type="radio" name="slide" id="signup">
+              <label for="login" class="slide login">Login</label>
+              <label for="signup" class="slide signup">SignUp</label>
+              <div class="slider-tab"></div>
+           </div>
+           <div class="form-inner">
+                 <!--Login form-->
+              <form name="login" action="#" class="login" onsubmit="Login()">
+                <div class="form-control">  
+                <div class="field">
+                     
+                    <input  type="text" name="validate" id="Email" placeholder="Email Address" requried autofocus >
+                 </div>
+                 <small>Error message</small>
+                 </div>
+                 <div class="form-control">
+                 <div class="field">
+                    <input type="password" name="validate" id="Password" placeholder="Password"  >
+                 </div>
+                 <small>Error message</small>
+                 </div>
+                 <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                 </div>
+                 <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" id="submit" value="Login">
+                 </div>
+                 <div class="signup-link" style = "color:white">
+                    Not a member? <a  style="color:red;"href="">SignUp now</a>
+                 </div>
+              </form>
+              <!--Signup form-->
+              <form name="login" action="#" class="signup" onsubmit="return SignUp()">
+                 <div class="field">
+                    <input name="validate" type="text" id="Email1" placeholder="Email Address" >
+                 </div>
+                 <small>Error message</small>
+                 <div class="field">
+                    <input type="password" name="validate" id="Password1" placeholder="Password" >
+                 </div>
+                 <small>Error message</small>
+                 <div class="field">
+                    <input type="password" name="validate" id="Password2" placeholder="Confirm password" >
+                 </div>
+                 <small>Error message</small>
+                 <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" id="submit" value="Signup">
+                 </div>
+              </form>
+           </div>
+        </div>
+        </div>
+    </div>
+     </div>
+     <script>
+        const loginText = document.querySelector(".title-text .login");/*returns the first Element within 
+        the document that matches the specified selector,*/
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+       
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (()=>{   //Executing the command  when the signup button is clicked
+          loginForm.style.marginLeft = "-50%";
+          loginText.style.marginLeft = "-150%";
+        });
+        loginBtn.onclick = (()=>{
+          loginForm.style.marginLeft = "0%";
+          loginText.style.marginLeft = "0%";
+        });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false; //To change the form to sign up
+         });
+      
+
+     </script>
+
+
+    
+    
+</body>
+</html>
+
+       

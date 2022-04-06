@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    font-style:normal;
+    
+}
+h1,h2 ,h3 ,h4 ,p,a{
+    color:white;
+    text-decoration: none;
+}
+.logo:hover{
+    transform: rotate(45deg);
+}
+body {
+    background-color:black;
+    font-family: 'Poppins', sans-serif;
+}
+/* Menu */
+
+.navigation-bar {
+    display:flex;
+    align-items:center;
+    padding:20px;
+  
+}
+
+/* Search Box editing */
+.search-box {  
+    top:50%;
+    left :50%;
+    background-color:white;
+    height:40px;
+    border-radius:40px;
+    padding:0px;
+    padding-bottom:-10px;
+}
+.search-btn{
+    color:#e84118;
+    float:bottom;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background:#2f3640;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box:hover>.search-txt{
+    width:240px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn{
+    background: white;
+}
+.search-txt{
+    border:0;
+    border:none;
+    background:none;
+    outline:none;
+    float:left;
+    height:40px;
+    color:black;
+    font-family: 'Poppins',sans-serif;
+    font-size:16px;
+    transition: 0.4s;
+    line-height: 10px;
+    width: 0;
+}
+
+/* Header editing */
+
+nav {
+    flex : 1;
+    text-align:right;
+}
+nav ul {
+    display:inline-block;
+    list-style:none;
+}
+nav ul li { 
+    display: inline-block;
+    margin-bottom:10px;
+    float: left;
+    margin-right:40px;
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    padding: 13px 10px;
+}
+nav ul li ul{
+    display: none;
+    position:absolute;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+/* Products List */
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li a:hover{
+    color: red;
+}
+
+
+/* Contact Editing*/
+.contact-bg {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+    font-style:normal;
+
+}
+.contact-bg h3 {
+    font-size:20px;
+    font-weight:400;
+}
+.text {
+    padding-top: 30px;
+    font-weight:300;
+    opacity:0.9;
+    font-style:normal;
+}
+.contact-bg .text {
+    margin:20px 0;
+}
+.contact-body {
+    max-width:1320px;
+    margin:0 auto;
+    padding:0 20px;
+}
+.contact-info {
+    margin:2px 0 ;
+    text-align:center;
+    padding:32px 30px;
+    color:white; 
+    font-style: normal;
+}
+.contact-info span {
+    display:block;
+    font-style:normal;
+}
+.contact-info div {
+    margin:14px 0;
+    padding:16px;
+}
+/* Icon styling */
+.contact-info span .fas {
+    font-size:32px;
+    padding-bottom:15px;
+    color:white;
+}
+.contact-info .text {
+     padding-top:7px;
+}
+.contact-form  {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:32px 0;
+    border-top:1px solid white;
+    
+}
+.contact-information{
+    display:flex;
+    justify-content: center;
+}
+.contact-form form {
+    padding-bottom:16px;
+    margin-left:20px;
+}
+.form-control{
+    width:100%;
+    border:1.5px solid white;
+    border-radius: 3px;
+    padding:13px;
+    margin:12px 0;
+    font-family:'Poppins' ,sans-serif;
+    font-size:16px;
+    outline:0;
+}
+.contact-form form div {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+}
+.send-btn {
+    font-family:'Poppins' ,sans-serif;
+    font-size:16px;
+    text-transform: uppercase;
+    background-color:white;
+    color:black;
+    border:0;
+    padding:0 6px;
+    cursor:pointer;
+    border-radius:3px;
+}
+.send-btn:hover {
+    background-color:black;
+    color:white;
+}
+.contact-form > div img {
+    width:85%;
+}
+.contact-form > div  {
+    margin:0 auto;
+    text-align:center;
+}
+
+
+
+#map{
+    height: 500px;
+    width: 100%;
+    
+}
+.map iframe{
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Body and footer container  */
+.container {
+    max-width:1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row {
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.col-2 {
+    flex-basis:50%;
+    min-width:300px;
+}
+.col-2 img {
+    max-width: 100%;
+}
+.col-2 h1 {
+    font-size:50px;
+    color:white;
+    line-height:60px;
+    margin:25px 0;
+}
+.btn {
+    display: inline-block;
+    background:white;
+    color:black;
+    padding:8px 30px;
+    margin:30px 0 ;
+    border-radius:30px;
+    transition: background 0.5s;
+}
+.btn:hover {
+    background-color:lightslategray;
+}
+.header .row {
+    margin-top:70px;
+}
+.col-3 {
+    flex-basis: 30%;
+    min-width:250px;
+    margin-bottom:30px;
+}
+.col-3 img {
+    width: 100%;
+
+}
+/* Footer editing col-4 is footer */
+.col-4 {
+    flex-basis:25%;
+    padding:10px;
+    min-width:10px;
+    margin-bottom:50px;
+    transition: transform 0.5s;
+}
+.col-4 img {
+    width:100%;
+
+}
+.col-4 p {
+    font-size:14px;
+}
+.col-4:hover {
+    transform:translateY(-5px);
+}
+
+/* Footer */
+.footer-title{
+    animation:1s linear infinite alternate-reverse;
+}
+.footer {   
+    font-size:14px;
+    padding:60px 0 20px;
+}
+.footer p{
+    color:white;
+}
+.footer h3 {
+    color:white;
+    margin-bottom:20px;
+}
+.footer-col-1, .footer-col-2 ,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom:20px;
+}
+.footer-col-1{
+    flex-basis:30%;
+}
+
+.footer-col-2{
+    flex:1;
+    text-align:center; 
+}
+.footer-col-2 img{
+    width:180px;
+    margin-bottom:20px;
+}
+.footer-col-3 , .footer-col-4 {
+    flex-basis:12%;
+    text-align:center;
+    color: white;
+}
+
+
+/* Footer editing logo */
+.app-logo {
+    margin-top:30px;
+    position:relative;
+    background-color:white;
+}
+.googleplay {
+    position:absolute;
+    top:0;
+}
+.appstore {
+    position:absolute;
+    top:0;
+    right:50px;
+}
+.app-logo img {
+    width:140px;
+}
+.footer hr  {
+    border:none;
+    background:white;
+    height: 1px;
+    margin:20px 0;
+}
+.copyright{
+    text-align:center;
+}
+
+
+
+
+
+/* first product FIRST PRODUCTTTT */
+/* hidden classes  */
+

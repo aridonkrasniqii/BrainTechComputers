@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+    <link rel="shortcut icon" type = "x-icon" href="images/BrainTechLogo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/68ce2e65bb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <title>BrainTech</title>
+    <style>
+            *{
+                margin :0;
+                padding:0;
+                box-sizing: border-box;
+             }
+             h1,h2 ,h3 ,h4 ,p,a{
+               color:white;
+             }
+
+            body {
+             background-color:black;
+             font-family: 'Poppins', sans-serif;
+            }
+    </style>
+    <script type = "text/javascript">
+
+        function popUpFunction(){
+
+
+            // alert("Are you sure you want to leave this page");
+            console.log("Are you sure you want to leave this page ")
+        }
+
+        popUpFunction();
+        
+
+
+    </script>
+</head>
+<body>
+
+    
+    
+    <div class="header">
+        <div class="container">
+        <div class = "navigation-bar">
+            <div class="logo">
+                <a href = "tech.html">
+                <img src = "images/BrainTechLogo.jpg" 
+                width = "125px"></a>
+    
+            </div>
+            <nav>
+                <ul id = "MenuItems">
+                    
+                    <li> <a href="tech.html" id ="home" onclick = "popUpFunction();">Home</a></li>
+                    <li> <a href="#">Products</a>
+                        <ul>
+                            <li><a href="products.html">Laptops</a></li>
+                            <li><a href="pc.html">PC</a></li>
+                            
+                        </ul>
+                        </li>
+                    <li> <a href="Support.html">Support</a></li>
+                    <li> <a href="Account.html">Account</a></li>
+                    <li><div class = "search-box">
+                        <input type="text" placeholder="Search..." id = "txt" class = "search-txt">
+                        <a href="#" class = "search-btn">
+                            <i class="fas fa-search"></i></a>
+                        </div> 
+                    </li>    
+                    
+                </ul>
+                
+            </nav>
+           
+            <img src="images/menuIcon.jpg" class = "menu-icon" alt="menu BrainTech">
+    
+        </div>
+            
+        </div>
+    </div>  
+        
+    
+
+
+    <div style = "width: 70%; margin:100px auto; display: flex; justify-content: space-between;">
+        <div>
+            <h1>Press Releases</h1>
+        </div>
+        <div>
+            <h1>Filter by year: </h1>
+            <select name="news" id="news" value = "All">
+                <option value="All" class = "option">All</option>
+                <option value="2021" class = "option">2021</option>
+                <option value="2021" class = "option" >2020</option>
+                <option value="2021" class = "option">2019</option>
+
+            </select>
+        </div>
+    </div>
+    <style>
+            #news{
+                font-size: 22px;     
+                color:black;
+                width: 80px;
+                height:40px;
+                font-family:'Poppins',sans-serif;
+            }
+            .option{
+                font-size: 20px;
+                font-family:'Poppins',sans-serif;
+                color:black;
+            }
+    </style>
+
+        <div class = "body-container">
+
+
+            <div class="column-container">
+
+                <div class="row-news">
+                    
+                    <div class = "news-image">
+                        <img src="/images/Laptops/news-1.jpg" alt="" class = "image">
+                    </div>
+                    <article class = "news-article">
+                        <div style = "margin:10px 0 10px 10px; font-size:small"><p class = "data">16 December 2021</p></div>
+                        
+                    <div style = "margin: 0 5px 0 10px ;">
+                            <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
+                                Lenovo Recognized as Gartner Power of the Profession Supply 
+                                <br> Chain Awards 2022 for Customer Innovation of the Year Finalist
+                            </p>
+                            
+                            <br>
+                            <p>
+                                Finalist for developing the customer innovation of the year 
+                                <br> with its Customer-Centric Quality Management ecosystem strategy.
+                            </p>
+                    </div>
+                    
+                    </article>
+                    
+                </div>
+
+            
+
+                <div class="row-news">
+                
+                    <div class = "news-image">
+                        <img src="/images/Laptops/news-2.jpg" alt="" class = "image">
+                    </div>
+                    <article class = "news-article">
+                        <div style = "margin:10px 0 10px 10px; font-size:small"><p class = "data">16 December 2021</p></div>
+                        
+                       <div style = "margin: 0 5px 0 10px ;">
+                            <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
+                                Lenovo ThinkVision Large Format Displays 
+                                <br> Deliver Uncompromised Collaboration
+                            </p>
+                            
+                            <br>
+                            <p>
+                                ThinkVision T86, T75 and T65 offer bright 4K displays, 
+                                <br> integrated whiteboard software, built-in speakers, 
+                                 <br> microphones, and a modular webcam for smarter video
+                            </p>
+                       </div>
+                       
+                    </article>
+            </div>
+
+            <div class="row-news" id =  "row-news-1">
+
+                <div class = "news-image">
+                    <img src="/images/Laptops/news-4.png" alt="" class = "image" id = "image-1">
+                </div>
+                <article class = "news-article" id = "article">
+                    <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
+                    
+                   <div style = "margin: 0 5px 0 10px ;">
+                        <h3 id = "hide" style = "text-decoration: underline; color:aqua;cursor:pointer;">Hide</h3>
+                        <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
+                            Lenovo Legion Extends Partnership with G2 Esports and Supports G2’s First Ever All-Female VALORANT Team
+                            
+                        </p>
+                        
+                        <br>
+                        <p>
+                            The G2 female VALORANT team, known as G2 Gozen, comprises some of the most successful and prominent female esports talent within the industry
+                        </p>
+                   </div>
+                   
+                </article>
+            </div>
+
+            <div class="row-news">
+                <div class = "news-image">
+                    <img src="/images/Laptops/news-5.png" alt="" class = "image">
+                </div>
+                <article class = "news-article">
+                    <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
+                    
+                   <div style = "margin: 0 5px 0 10px ;">
+                        <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
+                            Lenovo Reveals “Lenovo 360” Global Channel Framework, Enables Greater Access to Solutions for Partners
+                        </p>
+                        
+                        <br>
+                        <p>
+                            As businesses migrate to an Everything-as-a-Service model, “Lenovo 360” helps partners grow with expanded access to end-to-end solutions and services.
+                        </p>
+                   </div>
+                   
+                </article>
+            </div>
+            <div class="row-news">
+                <div class = "news-image">
+                    <img src="/images/Laptops/news-6.jpg" alt="" class = "image">
+                </div>
+                <article class = "news-article">
+                    <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
+                    
+                   <div style = "margin: 0 5px 0 10px ;">
+                        <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
+                            Lenovo Foundation Launches USD $1 Million TransforME Grant Round to Support Tech Skills
+                        </p>
+                        
+                        <br>
+                        <p>
+                            Focused on supporting under-resourced or underrepresented adults with the critical, most sought-after skills in today’s tech workforce.
+                        </p>
+                   </div>
+                   
+                </article>
+            </div>
+
+            <div class="row-news">
+                <div class = "news-image">
+                    <img src="/images/Laptops/news-7.jpg" alt="" class = "image">
+                </div>
+                <article class = "news-article">
+                    <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
+                    
+                   <div style = "margin: 0 5px 0 10px ;">
+                        <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
+                            Lenovo Awarded Gold in the Hong Kong Institute of Certified Public Accountants Best Corporate Governance & ESG Awards 2021
+                        </p>
+                        
+                        <br>
+                        <p>
+                            Lenovo awarded gold and named one of Hong Kong’s most sustainable companies.
+                        </p>
+                   </div>
+                   
+                </article>
+            </div>
+
+        </div>
+
+
+        
+       <div class = "aside-container">
+
+            <div class = "" style = "display: flex; justify-content: space-between; margin-bottom: 40px;" id = "">
+                <h2 style = "margin:10px 0 0 20px" id = "kits">Featured Press Kits</h2>
+                
+                <input type="submit" value = "View All" id = "view-all">
+            </div>
+
+            <div>
+
+                <div style = "display: flex; justify-content:space-around; margin:5px; gap:5px">
+
+                    <div>
+                        <img src="/images/Laptops/aside-news-1.jpg" alt="" style = "width: 100%; height: 170px" >
+                        <h3>Tech World 2021</h3>
+                    </div>
+
+                    
+                    <div>
+                        <img src="/images/Laptops/aside-news-2.jpg" alt="" style = "width: 100%; height: 170px" id = "">
+                        <h3>MWC 2021</h3>
+                    </div>
+
+                    
+                    
+                </div>
+                
+                <div style = "display: flex; justify-content:space-around; margin:5px; gap:5px" id = "">
+                    <div>
+                        <img src="/images/Laptops/aside-news-3.jpg" alt="" style = "width: 100%; height: 170px" >
+                        <h3>CES 2021</h3>
+                    </div>
+                    
+                    <div> 
+                         <img src="/images/Laptops/aside-news-4.jpg" alt="" style = "width: 100%; height: 170px" id = "">
+                         <h3 style = "line-height: 20px;">LENOVO NEW <br> REALITIES </h3>
+                    </div>
+                </div>
+            </div>
+       </div>   
+
+    </div>
+
+    <style>
+        #view-all
+        {
+           
+                background: linear-gradient(green,aqua);
+                color: white;
+                border: 0;
+                outline:0;
+                padding:0 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                text-shadow: 0.1px 0.1px rgb(10, 250, 238);
+                cursor: pointer;
+                font-family:'Poppins',sans-serif;
+                font-size: 16px;
+                
+        }
+        #kits{
+            text-shadow:1px 1px cornflowerblue;
+        }
+    </style>
+    
+  
+
+
+
+              
+           
+
+       
+
+    
+    <div class = "third-row">
+           
+        <div>   
+            <h1>
+                Yoga Slim Pro 16"  <br> Power to the pixel <br>     
+            </h1>
+        </div>
+        <div>
+            <video width="500" height="340" autoplay muted>
+                <source src="/images/Lenovo Yoga Slim 7 Pro 16' Product Tour.mp4" type="video/mp4">
+                  
+              </video>
+
+        </div>
+
+    </div>
+
+    <div class = "body-container">
+
+
+        <div class="column-container">
+
+
+            <div class="row-news">
+
+                <div class = "news-image">
+                    <img src="/images/Laptops/news-8.jpg" alt="" class = "image" draggable="false">
+                </div>
+                <article class = "news-article">
+                    <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
+                    
+                   <div style = "margin: 0 5px 0 10px ;">
+                        <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
+                            Lenovo Becomes the Preferred Workstation Innovation Partner for DreamWorks Animation
+                            
+                        </p>
+                        
+                        <br>
+                        <p class="paragrafi">
+                            DreamWorks Animation will use Lenovo’s high-performance ThinkStation and ThinkPad P Series workstations to accelerate their most challenging workflows.
+                        </p>
+                   </div>
+                   
+                </article>
+            </div>
+
+            <div class = "show-more-button">
+                <button id = "show-more-button" ><h3 class = "first-1">Show more news...</h3></button>    
+            </div>
+            <style>
+                #show-more-button-text{
+                    text-align:center;
+                    cursor:pointer;
+                    color:black;
+                }
+                
+                #show-more-button-text:hover{
+                    text-decoration: underline;
+                    color:lightseagreen;
+                }
+                #show-more-button{
+                    width: 200px;
+                    height:35px;
+                }
+                
+            </style>
+            <!-- 2 -->
+            <div class="row-news last-news-rows">
+
+                <div class = "news-image">
+                    <img src="/images/Laptops/news-8.jpg" alt="" class = "image" draggable="false">
+                </div>
+                <article class = "news-article">
+                    <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
+                    
+                   <div style = "margin: 0 5px 0 10px ;">
+                        <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
+                            Lenovo Becomes the Preferred Workstation Innovation Partner for DreamWorks Animation
+                            
+                        </p>
+                        
+                        <br>
+                        <p class="paragrafi">
+                            DreamWorks Animation will use Lenovo’s high-performance ThinkStation and ThinkPad P Series workstations to accelerate their most challenging workflows.
+                        </p>
+                   </div>
+                   
+                </article>
+            </div>
+            <!-- 3 -->
+            <div class="row-news last-news-rows">
+
+                <div class = "news-image">
+                    <img src="/images/Laptops/news-8.jpg" alt="" class = "image" draggable="false">
+                </div>
+                <article class = "news-article">
+                    <div style = "margin:10px 0 10px 10px; font-size:small"><p>16 December 2021</p></div>
+                    
+                   <div style = "margin: 0 5px 0 10px ;">
+                        <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;">
+                            Lenovo Becomes the Preferred Workstation Innovation Partner for DreamWorks Animation
+                            
+                        </p>
+                        
+                        <br>
+                        <p class="paragrafi">
+                            DreamWorks Animation will use Lenovo’s high-performance ThinkStation and ThinkPad P Series workstations to accelerate their most challenging workflows.
+                        </p>
+                   </div>
+                   
+                </article>
+            </div>
+            <!-- 4 -->
+            <div class="row-news last-news-rows">
+
+                <div class = "news-image">
+                    <img src="/images/Laptops/news-8.jpg" alt="" class = "image" draggable="false">
+                </div>
+                <article class = "news-article">
+                    <div style = "margin:10px 0 10px 10px; font-size:small" id = "last-news-date"><p>16 December 2021</p></div>
+                    
+                   <div style = "margin: 0 5px 0 10px ;">
+                        <p style = "font-size:18px; font-weight: 500; line-height: 23px; text-decoration: underline;" id = "last-news-title">
+                            Lenovo Becomes the Preferred Workstation Innovation Partner for DreamWorks Animation
+                            
+                        </p>
+                        
+                        <br>
+                        <p class="paragrafi" id = "last-news-paragraph">
+                            DreamWorks Animation will use Lenovo’s high-performance ThinkStation and ThinkPad P Series workstations to accelerate their most challenging workflows.
+                        </p>
+                   </div>
+                   
+                </article>
+            </div>
+
+           </div>
+        
+
+        
+                    <div class = "aside-container-1">
+
+
+                    </div>   
+
+            
+    </div>
+
+    
+
+        <article class = "browsers">
+
+            <label for="browser" class = "label-browser">Choose your browser from the list:</label>
+                    <input list="browsers" name="browser" id="browser" placeholder="Choose the browser">
+
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+
+                    </datalist>
+        </article>
+
+    
+        
+    
+    <footer>
+
+        <div class = "footer">
+            <div class = "footer-1">
+
+            
+            <div class = "footer-logo">
+                <div>
+                    <img src="images/BrainTechLogo.jpg" alt="BrainTech Logo">
+                </div>
+            </div>
+            <div class = "footer-title">
+                <div >
+                    <h2>TEAM UP. FLIGHT ON</h2>
+                </div>
+            </div>
+
+            <div class = "footer-contact">
+                <div>
+                    <a href="#" class="fa fa-facebook" class = "social"></a>
+                    
+                </div>
+                <div>
+                    <a href="#" class="fa fa-twitter" class = "social"></a>
+                </div>
+                <div>
+                    <a href="#" class="fa fa-youtube" class = "social"></a>
+                </div>
+                <div>
+                    
+                    <a href="#" class="fa fa-instagram" class = "social"></a>
+                </div>
+            </div>
+
+
+            <div class = "footer-container">
+
+                <div class = "about us">
+                    <div class = "column-title">
+                        <h2>ABOUT US</h2>
+                    </div>
+                    <div class = "footer-column">
+                        <p>About BRAINTECH</p>
+                        <p>About GIGABYTE</p>
+                    </div>
+                </div>
+                <div class = "products">
+                    <div class = "column-title">
+                        <h2>PRODUCTS</h2>
+                    </div>
+                    <div class = "footer-column">
+                        <p>Motherboards</p>
+                        <p>Graphics Cards</p>
+                        <p>Laptops</p>
+                        <p>Monitors</p>
+                        <p>Desktop PC</p>
+                        <p>PC Components</p>
+                    </div>
+                </div>
+
+                <div class = "explore">
+                    <div class = "column-title">
+                        <h2>EXPLORE</h2>
+                    </div>
+                    <div class = "footer-column">
+                        <a href="news.html"><p>News</p></a>
+                        <p>Events</p>
+                        <p>Blog</p>
+                        <p>Wallpaper</p>
+                    </div>
+                </div>
+
+
+                <div class = "membership">   
+                    <div class = "column-title">
+                            <h2>
+                                MEMBERSHIP 
+                            </h2>
+                    </div>
+                    <div class = "footer-column">
+                        <p>Why Join?</p>
+                        <p>Membership Levels</p>
+                        <p>AORUS Points & Rewards</p>
+                        <p>Achievement Badges</p>
+                        <p>Member Leaderboard</p>
+                        <p>Member FAQs</p>
+                    </div>
+                </div>
+                <div class = "service">
+
+                    <div class = "column-title">
+                            <h2>SERVICE </h2>
+                    </div>
+                    <div class = "footer-column">
+                       <p> Find A Store</p>
+                        <p>Warranty Information</p>
+                        <p>Contact Us</p>
+                        <p>FAQ</p>
+                        <p>Product Registration</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src = "Jquery/news.js">
+
+            
+    </script>
+</body>
+</html>
+
